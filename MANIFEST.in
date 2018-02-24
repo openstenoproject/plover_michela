@@ -1,0 +1,4 @@
+include tox.ini
+exclude plover_michela/dictionaries/michela_main.xlsx
+include plover_michela/dictionaries/michela_main.json
+include plover_michela/dictionaries/michela_user.json

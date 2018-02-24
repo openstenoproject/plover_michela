@@ -72,5 +72,5 @@ KEYMAPS = {
     },
 }
 
-DICTIONARIES_ROOT = 'asset:plover:assets'
-DEFAULT_DICTIONARIES = ()
+DICTIONARIES_ROOT = 'asset:plover_michela:dictionaries'
+DEFAULT_DICTIONARIES = ('michela_user.json', 'michela_main.json')
