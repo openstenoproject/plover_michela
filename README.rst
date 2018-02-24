@@ -14,6 +14,11 @@ Details about the theory and the main dictionary contents can be found
 Release history
 ---------------
 
+In development
+~~~~~~~~~~~~~~
+
+* fix undo stroke (use ``U``, not ``X``)
+
 0.1.2
 ~~~~~
 
