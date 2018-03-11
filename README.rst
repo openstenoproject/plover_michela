@@ -14,6 +14,11 @@ Details about the theory and the main dictionary contents can be found
 Release history
 ---------------
 
+In development
+~~~~~~~~~~~~~~
+
+* update main dictionary and split it into three parts: main, numbers, and commands
+
 0.1.3
 ~~~~~
 

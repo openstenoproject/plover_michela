@@ -73,4 +73,5 @@ KEYMAPS = {
 }
 
 DICTIONARIES_ROOT = 'asset:plover_michela:dictionaries'
-DEFAULT_DICTIONARIES = ('michela_user.json', 'michela_main.json')
+DEFAULT_DICTIONARIES = ('michela_user.json', 'michela_commands.json',
+                        'michela_numbers.json', 'michela_main.json')
