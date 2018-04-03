@@ -8,6 +8,7 @@ Documentation
 -------------
 
 For details about the theories and the contents of the dictionaries (in Italian):
+
 * `Phonetic Theory <https://sillabix.gitbooks.io/dizionario-test/>`_
 * `Orthographic Theory <https://www.gitbook.com/book/sillabix/dizionario-ortografico-michela-per-input-sillabic/details/>`_
 
