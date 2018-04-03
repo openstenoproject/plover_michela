@@ -21,6 +21,7 @@ Release history
 * move punctuation and spacing entries to a dedicated dictionary
 * add more entries to the commands dictionary
 * add support for orthographic theory
+* fix conflicting dictionary entries
 
 0.1.4
 ~~~~~
