@@ -1,6 +1,6 @@
 # vim: set fileencoding=utf-8 :
 
-# #SPCTHVRIAEOcsthpr*ieao
+# FSCZPNRXIUuieanpzcsf
 KEYS = (
     'F-', 'S-', 'C-', 'Z-', 'P-', 'N-', 'R-', 'X-', 'I-', 'U-',
     '-u', '-i', '-e', '-a', '-n', '-p', '-z', '-c', '-s', '-f',
