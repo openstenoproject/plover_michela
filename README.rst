@@ -16,6 +16,11 @@ For details about the theories and the contents of the dictionaries (in Italian)
 Release history
 ---------------
 
+In development
+~~~~~~~~~~~~~~
+
+* fix a few entries in the orthographic dictionary
+
 0.1.5
 ~~~~~
 
