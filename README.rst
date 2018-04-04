@@ -16,8 +16,8 @@ For details about the theories and the contents of the dictionaries (in Italian)
 Release history
 ---------------
 
-In development
-~~~~~~~~~~~~~~
+0.1.6
+~~~~~
 
 * fix a few entries in the orthographic dictionary
 
