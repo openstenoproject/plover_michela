@@ -1,2 +1,4 @@
+include pyproject.toml
 include tox.ini
-include plover_michela/dictionaries/*.json
+include plover_michela/assets/*
+recursive-include test *.py

@@ -5,13 +5,15 @@ Michela (Italian system) support for Plover.
 
 ## Documentation
 
-For details about the theories and the contents of the dictionaries (in Italian):
-
-* [Phonetic Theory](https://sillabix.gitbooks.io/dizionario-test/)
-* [Orthographic Theory](https://www.gitbook.com/book/sillabix/dizionario-ortografico-michela-per-input-sillabic/details/)
+For details about the theories and the contents of the dictionaries (in Italian), see:
+https://github.com/Sillabix/Plover-Michela
 
 
 ## Release history
+
+### 1.0.0
+
+* drop phonetic/orthographic differentiation, only support one "Michela" system
 
 ### 0.1.6
 
