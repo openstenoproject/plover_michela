@@ -24,8 +24,32 @@ class TestsBlackbox:
 
     def test_orthography_2(self):
         r'''
-        "F": "comparti",
+        "F": "vera",
         "S": "{^mente}",
 
-        F/S  " compartimente"
+        F/S  " veramente"
+        '''
+
+    def test_orthography_3(self):
+        r'''
+        "F": "chiude",
+        "S": "{^dola}",
+
+        F/S  " chiudendola"
+        '''
+
+    def test_orthography_4(self):
+        r'''
+        "F": "elimina",
+        "S": "{^dola}",
+
+        F/S  " eliminandola"
+        '''
+
+    def test_orthography_5(self):
+        r'''
+        "F": "enogastronomia",
+        "S": "{^ci}",
+
+        F/S  " enogastronomici"
         '''

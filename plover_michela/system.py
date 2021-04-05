@@ -24,26 +24,21 @@ ORTHOGRAPHY_RULES = [
 
     (r'^(.*). \^ cene$', r'\1cene'),
 
-    (r'^(.*) \^ ci$', r'\1ci'),
     (r'^(.*). \^ ci$', r'\1ci'),
 
     (r'^(.*). \^ dola$', r'\1dola'),
     (r'^(.*). \^ dole$', r'\1dole'),
     (r'^(.*). \^ doli$', r'\1doli'),
     (r'^(.*). \^ dolo$', r'\1dolo'),
+    (r'^(.*[ae]) \^ dola$', r'\1ndola'),
 
     (r'^(.*). \^ done$', r'\1done'),
 
-    (r'^(.*) \^ gli$', r'\1gli'),
     (r'^(.*). \^ gli$', r'\1gli'),
 
-    (r'^(.*) \^ la$', r'\1la'),
     (r'^(.*). \^ la$', r'\1la'),
-    (r'^(.*) \^ le$', r'\1le'),
     (r'^(.*). \^ le$', r'\1le'),
-    (r'^(.*) \^ li$', r'\1li'),
     (r'^(.*). \^ li$', r'\1li'),
-    (r'^(.*) \^ lo$', r'\1lo'),
     (r'^(.*). \^ lo$', r'\1lo'),
 
     (r'^(.*). \^ mela$', r'\1mela'),
@@ -52,15 +47,11 @@ ORTHOGRAPHY_RULES = [
     (r'^(.*). \^ melo$', r'\1melo'),
 
     (r'^(.*). \^ mene$', r'\1mene'),
-    (r'^(.*) \^ mente$', r'\1mente'),
     (r'^(.*). \^ mente$', r'\1mente'),
-    (r'^(.*) \^ mente$', r'\1mente'),
     (r'^(.*). \^ mente$', r'\1amente'),
 
-    (r'^(.*) \^ mi$', r'\1mi'),
     (r'^(.*). \^ mi$', r'\1mi'),
 
-    (r'^(.*) \^ ne$', r'\1ne'),
     (r'^(.*). \^ ne$', r'\1ne'),
 
     (r'^(.*). \^ sela$', r'\1sela'),
@@ -68,7 +59,6 @@ ORTHOGRAPHY_RULES = [
     (r'^(.*). \^ seli$', r'\1seli'),
     (r'^(.*). \^ selo$', r'\1selo'),
 
-    (r'^(.*) \^ si$', r'\1si'),
     (r'^(.*). \^ si$', r'\1si'),
 
     (r'^(.*). \^ tela$', r'\1tela'),
@@ -76,7 +66,6 @@ ORTHOGRAPHY_RULES = [
     (r'^(.*). \^ teli$', r'\1teli'),
     (r'^(.*). \^ telo$', r'\1telo'),
 
-    (r'^(.*) \^ ti$', r'\1ti'),
     (r'^(.*). \^ ti$', r'\1ti'),
 
     (r'^(.*). \^ vela$', r'\1vela'),
@@ -84,7 +73,6 @@ ORTHOGRAPHY_RULES = [
     (r'^(.*). \^ veli$', r'\1veli'),
     (r'^(.*). \^ velo$', r'\1velo'),
 
-    (r'^(.*) \^ vi$', r'\1vi'),
     (r'^(.*). \^ vi$', r'\1vi'),
 
     (r'^(.*). \^ issima$', r'\1issima'),
