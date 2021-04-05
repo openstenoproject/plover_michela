@@ -21,7 +21,7 @@ ORTHOGRAPHY_RULES_ALIASES = {}
 ORTHOGRAPHY_WORDLIST = None
 
 KEYMAPS = {
-    'Michela Keyboard': {
+    'Michela Keyboard (MIDI, 2 octaves)': {
         'F-': 'C2',
         'S-': 'C#2',
         'C-': 'D2',
@@ -42,6 +42,28 @@ KEYMAPS = {
         '-c': 'A#3',
         '-s': 'B3',
         '-f': 'C4',
+    },
+    "Michela Keyboard (MIDI, 3+ octaves)": {
+        'F-': 'D#2',
+        'S-': 'E2',
+        'C-': 'F2',
+        'Z-': 'F#2',
+        'P-': 'G2',
+        'N-': 'G#2',
+        'R-': 'A2',
+        'X-': 'A#2',
+        'I-': 'B2',
+        'U-': 'C3',
+        '-u': 'E3',
+        '-i': 'F3',
+        '-e': 'F#3',
+        '-a': 'G3',
+        '-n': 'G#3',
+        '-p': 'A3',
+        '-z': 'A#3',
+        '-c': 'B3',
+        '-s': 'C4',
+        '-f': 'C#4',
     },
     'Keyboard': {
         'F-': 'q',

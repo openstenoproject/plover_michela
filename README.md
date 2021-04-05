@@ -2,6 +2,8 @@
 
 Michela (Italian system) support for Plover.
 
+This include support for compatible [MIDI-keyboard based machines](https://it.wikipedia.org/wiki/Macchina_Michela) (both 2 and 3+ octaves variants).
+
 
 ## Documentation
 
@@ -14,6 +16,7 @@ https://github.com/Sillabix/Plover-Michela
 ### 1.0.0
 
 * drop phonetic/orthographic differentiation, only support one "Michela" system
+* add support for 2 variants of the Michela Keyboard machines
 
 ### 0.1.6
 
