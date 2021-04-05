@@ -1,5 +1,3 @@
-# vim: set fileencoding=utf-8 :
-
 # FSCZPNRXIUuieanpzcsf
 KEYS = (
     'F-', 'S-', 'C-', 'Z-', 'P-', 'N-', 'R-', 'X-', 'I-', 'U-',
@@ -72,11 +70,12 @@ KEYMAPS = {
     },
 }
 
-DICTIONARIES_ROOT = 'asset:plover_michela:dictionaries'
+DICTIONARIES_ROOT = 'asset:plover_michela:assets'
 
 DEFAULT_DICTIONARIES = (
-    'michela_user.json',
-    'michela_commands.json',
-    'michela_numbers.json',
-    'michela_punctuation_and_spacing.json',
+    'michela_utente.json',
+    'michela_punteggiaturacomandi.json',
+    'michela_numeri.json',
+    'michela_sillabico.json',
+    'michela_principale.json',
 )
