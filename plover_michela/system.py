@@ -15,69 +15,272 @@ NUMBERS = {}
 UNDO_STROKE_STENO = 'U'
 
 ORTHOGRAPHY_RULES = [
-    (r'^(.*). \^ cela$', r'\1cela'),
-    (r'^(.*). \^ cele$', r'\1cele'),
-    (r'^(.*). \^ celi$', r'\1celi'),
-    (r'^(.*). \^ celo$', r'\1celo'),
+    # == +cela, +cele, +celi, +celo ==
+    #: fare + cela = farcela
+    #: portare + cele = portarcele
+    #: vedere + celi = vederceli
+    #: sentire + celo = sentircelo
+    #: comporre + cela = comporcela
+    #: produrre + cele = producele
+    #: sottrarre + celi = sottrarceli
+    #: sottoporre + celo = sottoporcelo
+    #: scrivete + cel[aeio] = scrivetecel[aeio]
+    #: indicato + cel[aeio] = indicatecel[aeio]
+    (r'^(.*[aeiou])r?re \^ cel([aeio])$', r'\1rcel\2'),
+    (r'^(.*). \^ cel([aeio])$', r'\1ecel\2'),
 
-    (r'^(.*). \^ cene$', r'\1cene'),
+    # == +cene ==
+    #: fare + cene = farcene
+    #: liberare + cene = liberarcene
+    #: produrre + cene = produrcene
+    #: portato + cene = portatecene
+    #: scrivete + cene = scrivetecene
+    (r'^(.*[aeiou])r?re \^ cene$', r'\1rcene'),
+    (r'^(.*). \^ cene$', r'\1ecene'),
 
-    (r'^(.*). \^ ci$', r'\1ci'),
+    # == +ci ==
+    #: fare + ci = farci
+    #: credere + ci = crederci
+    #: indurre + ci = indurci
+    (r'^(.*[aeiou])r?re \^ ci$', r'\1rci'),
 
-    (r'^(.*). \^ dola$', r'\1dola'),
-    (r'^(.*). \^ dole$', r'\1dole'),
-    (r'^(.*). \^ doli$', r'\1doli'),
-    (r'^(.*). \^ dolo$', r'\1dolo'),
+    # == +esco ==
+    #: mano + esco = manesco
+    #: libro + esco = libresco
+    #: arabo + esco = arabesco
+    (r'^(.*). \^ esco$', r'\1esco'),
 
-    (r'^(.*). \^ done$', r'\1done'),
+    # == +esimo ==
+    #: undici + esimo = undicesimo
+    #: diciasette + esimo = diciasettesimo
+    #: ventitré + esimo = ventitreesimo
+    #: monaco + esimo = monachesimo
+    (r'^(.*[aeiou])tré \^ esimo$', r'\1treesimo'),
+    (r'^(.*[aeiou])co \^ esimo$', r'\1chesimo'),
+    (r'^(.*). \^ esimo$', r'\1esimo'),
 
-    (r'^(.*). \^ gli$', r'\1gli'),
+    # == +ismo ==
+    #: abolizione + ismo = abolizionismo
+    #: abusivo + ismo = abusivismo
+    #: centro + ismo = centrismo
+    (r'^(.*). \^ ismo$', r'\1ismo'),
 
-    (r'^(.*). \^ la$', r'\1la'),
-    (r'^(.*). \^ le$', r'\1le'),
-    (r'^(.*). \^ li$', r'\1li'),
-    (r'^(.*). \^ lo$', r'\1lo'),
+    # == +ità ==
+    #: vasto + ità = vastità
+    #: utile + ità = utilità
+    #: unico + ità = unicità
+    (r'^(.*). \^ ità$', r'\1ità'),
 
-    (r'^(.*). \^ mela$', r'\1mela'),
-    (r'^(.*). \^ mele$', r'\1mele'),
-    (r'^(.*). \^ meli$', r'\1meli'),
-    (r'^(.*). \^ melo$', r'\1melo'),
+    # == +età ==
+    #: vario + età = varietà
+    #: socio + età = società
+    #: sobrio + età = sobrietà
+    (r'^(.*). \^ età$', r'\1età'),
 
-    (r'^(.*). \^ mene$', r'\1mene'),
-    (r'^(.*). \^ mente$', r'\1mente'),
-    (r'^(.*). \^ mente$', r'\1amente'),
+    # == +gli ==
+    #: dire + gli = dirgli
+    #: proporre + gli = proporgli
+    (r'^(.*[aeiou])r?re \^ gli$', r'\1rgli'),
 
-    (r'^(.*). \^ mi$', r'\1mi'),
+    # == +gliela, +gliele, +glieli, +glielo ==
+    #: fare + gliela = fargliela
+    #: portare + gliele = portargliele
+    #: vedere + glieli = vederglieli
+    #: sentire + glielo = sentirglielo
+    #: tradurre + gliela = tradurgliela
+    #: estrarre + gliele = estrargliele
+    #: sottrarre + glieli = sottrarglieli
+    #: sottoporre + glielo = sottoporglielo
+    #: scrivete + gliel[aeio] = scrivetegliel[aeio]
+    #: indicato + gliel[aeio] = indicategliel[aeio]
+    (r'^(.*[aeiou])r?re \^ gliel([aeio])$', r'\1rgliel\2'),
+    (r'^(.*). \^ gliel([aeio])$', r'\1egliel\2'),
 
-    (r'^(.*). \^ ne$', r'\1ne'),
+    # == +gliene ==
+    #: fare + gliene = fargliene
+    #: portare + gliene = portargliene
+    #: sottoporre + gliene = sottoporgliene
+    (r'^(.*[aeiou])r?re \^ gliene$', r'\1rgliene'),
+    (r'^(.*). \^ gliene$', r'\1egliene'),
 
-    (r'^(.*). \^ sela$', r'\1sela'),
-    (r'^(.*). \^ sele$', r'\1sele'),
-    (r'^(.*). \^ seli$', r'\1seli'),
-    (r'^(.*). \^ selo$', r'\1selo'),
+    # == +issima, +issime, +issimi, +issimo,==
+    #: felice + issim[aeio] = felicissim[aeio]
+    #: secco + issim[aeio] = secchissim[aeio]
+    #: abile + issim[aeio] = abilissim[aeio]
+    (r'^(.*[aeiou])cco \^ issim([aeio])$', r'\1cchissim\2'),
+    (r'^(.*). \^ issim([aeio])$', r'\1issim\2'),
 
-    (r'^(.*). \^ si$', r'\1si'),
+    # == +la, +le, +li, +lo ==
+    #: dire + la = dirla
+    #: fare + le = farle
+    #: cambiare + li = cambiarli
+    #: vedere + lo = vederlo
+    #: proporre + la = proporla
+    #: condurre + le = condurle
+    #: indurre + li = indurli
+    #: ridurre + lo = ridurlo
+    (r'^(.*[aeiou])r?re \^ l([aeio])$', r'\1rl\2'),
 
-    (r'^(.*). \^ tela$', r'\1tela'),
-    (r'^(.*). \^ tele$', r'\1tele'),
-    (r'^(.*). \^ teli$', r'\1teli'),
-    (r'^(.*). \^ telo$', r'\1telo'),
+    # == +mela, +mele, +meli, +melo ==
+    #: fare + mela = farmela
+    #: portare + mele = portarmele
+    #: vedere + meli = vedermeli
+    #: sentire + melo = sentirmelo
+    #: tradurre + mela = tradurmela
+    #: estrarre + mele = estrarmele
+    #: sottrarre + meli = sottrarmeli
+    #: sottoporre + melo = sottopormelo
+    #: scrivete + mel[aeio] = scrivetemel[aeio]
+    #: indicato + mel[aeio] = indicatemel[aeio]
+    (r'^(.*[aeiou])r?re \^ mel([aeio])$', r'\1rmel\2'),
+    (r'^(.*). \^ mel([eio])$', r'\1emel\2'),
 
-    (r'^(.*). \^ ti$', r'\1ti'),
+    # == +mene ==
+    #: fare + mene = farmene
+    #: liberare + mene = liberarmene
+    #: estrarre + mene = estrarmene
+    #: scrivete + mene = scrivetemene
+    #: indicato + mene = indicatemene
+    (r'^(.*[aeiou])r?re \^ mene$', r'\1rmene'),
+    (r'^(.*). \^ mene$', r'\1emene'),
 
-    (r'^(.*). \^ vela$', r'\1vela'),
-    (r'^(.*). \^ vele$', r'\1vele'),
-    (r'^(.*). \^ veli$', r'\1veli'),
-    (r'^(.*). \^ velo$', r'\1velo'),
+    # == +mente ==
+    #: abile + mente = abilmente
+    #: folle + mente = follemente
+    #: familiare + mente = familiarmente
+    #: puro + mente = puramente
+    #: retto + mente = rettamente
+    #: espresso + mente = espressamente
+    #: distinto + mente = distintamente
+    (r'^(.*[aeiou])l?le \^ mente$', r'\1lmente'),
+    (r'^(.*[aeiou])re \^ mente$', r'\1rmente'),
+    (r'^(.*[aeiou])ro \^ mente$', r'\1ramente'),
+    (r'^(.*[aeiou])tto \^ mente$', r'\1tamente'),
+    (r'^(.*[aeiou])sso \^ mente$', r'\1ssamente'),
+    (r'^(.*[aeiou])nto \^ mente$', r'\1ntamente'),
 
-    (r'^(.*). \^ vi$', r'\1vi'),
+    # == +mi ==
+    #: fare + mi = farmi
+    #: sentire + mi = sentirmi
+    #: indurre + mi = indurmi
+    (r'^(.*[aeiou])r?re \^ mi$', r'\1rmi'),
 
-    (r'^(.*). \^ issima$', r'\1issima'),
-    (r'^(.*). \^ issime$', r'\1issime'),
-    (r'^(.*). \^ issimi$', r'\1issimi'),
-    (r'^(.*). \^ issimo$', r'\1issimo'),
+    # == +ne ==
+    #: sentire + ne = sentirne
+    #: ridurre + ne = ridurne
+    (r'^(.*[aeiou])r?re \^ ne$', r'\1rne'),
 
-    (r'^(.*). \^ i$', r'\1i'),
+    # == +sela, +sele, +seli, +selo ==
+    #: fare + sela = farsela
+    #: portare + sele = portarsele
+    #: vedere + seli = vederseli
+    #: sentire + selo = sentirselo
+    #: detrarre + sela = detrarsela
+    #: estrarre + sele = estrarsele
+    #: comporre + seli = comporseli
+    #: tradurre + selo = tradurselo
+    (r'^(.*[aeiou])r?re \^ sel([aeio])$', r'\1rsel\2'),
+
+    # == +si ==
+    #: dire + si = dirsi
+    #: sentire + si = sentirsi
+    #: porre + si = porsi
+    (r'^(.*[aeiou])r?re \^ si$', r'\1rsi'),
+
+    #== +teci ==
+    #: portato + teci = portateci
+    #: scrivete + teci = scriveteci
+    (r'^(.*[aeiou])t[oe] \^ teci$', r'\1teci'),
+
+    # == +tegli ==
+    #: convertito + tegli = convertitegli
+    #: scrivete + tegli = scrivetegli
+    (r'^(.*[aeiou])t[oe] \^ tegli$', r'\1tegli'),
+
+    # == +tela, +tele, +teli, +telo ==
+    #: cambiare + tela = cambiartela
+    #: portare + tele = portartele
+    #: vedere + teli = vederteli
+    #: sentire + telo = sentirtelo
+    #: estrarre + tela = estrartela
+    #: detrarre + tele = detrartele
+    #: scomporre + teli = scomporteli
+    #: produrre + telo = produrtelo
+    (r'^(.*[aeiou])r?re \^ tel([aeio])$', r'\1rtel\2'),
+
+    #== +temi ==
+    #: convertito + temi = convertitemi
+    #: scrivete + temi = scrivetemi
+    (r'^(.*[aeiou])t[oe] \^ temi$', r'\1temi'),
+
+    #== +tevi ==
+    #: convertito + tevi = convertitevi
+    #: scrivete + tevi = scrivetevi
+    (r'^(.*[aeiou])t[oe] \^ tevi$', r'\1tevi'),
+
+    # == +ti ==
+    #: dire + ti = dirti
+    #: sentire + ti = sentirti
+    #: porre + ti = porti
+    (r'^(.*[aeiou])r?re \^ ti$', r'\1rti'),
+
+    # == +vela, +vele, +veli, +velo ==
+    #: cambiare + vela = cambiarvela
+    #: portare + vele = portarvele
+    #: vedere + veli = vederveli
+    #: sentire + velo = sentirvelo
+    #: estrarre + vela = estrarvela
+    #: comporre + vele = comporvele
+    #: tradurre + veli = tradurveli
+    #: produrre + velo = produrvelo
+    #: portato + vela = portatevela
+    #: scrivete + vela = scrivetevela
+    #: portato + vele = portatevele
+    #: scrivete + vele = scrivetevele
+    #: portato + veli = portateveli
+    #: scrivete + veli = scriveteveli
+    #: portato + velo = portatevelo
+    #: scrivete + velo = scrivetevelo
+    (r'^(.*[aeiou])r?re \^ vel([aeio])$', r'\1rvel\2'),
+    (r'^(.*). \^ vel([aeio])$', r'\1evel\2'),
+
+    # == +vene ==
+    #: fare + vene = farvene
+    #: liberare + vene = liberarvene
+    #: estrarre + vene = estrarvene
+    #: scrivete + vene = scrivetevene
+    #: indicato + vene = indicatevene
+    (r'^(.*[aeiou])r?re \^ vene$', r'\1rvene'),
+    (r'^(.*). \^ vene$', r'\1evene'),
+
+    # == +vi ==
+    #: dire + vi = dirvi
+    #: sentire + vi = sentirvi
+    #: apporre + vi = apporvi
+    (r'^(.*[aeiou])r?re \^ vi$', r'\1rvi'),
+
+    # == +zata +zate +zati +zato ==
+    #: parziale + zat[aeio] = parzializzat[aeio]
+    #: disavanzo + zat[aeio] = disavanzat[aeio]
+    #: battezzo + izzat[aeio] = battezzat[aeio]
+    (r'^(.*[aeiou])zzo \^ zat([aeio])$', r'\1zzat\2'),
+    (r'^(.*[ln])zo \^ zat([aeio])$', r'\1zat\2'),
+    (r'^(.*). \^ zat([aeio])$', r'\1izzat\2'),
+
+    # == +a, +e, +i, +o,==
+    # these suffixes are used to change the gender and the number of words
+    #: vivo + a = viva
+    #: contratto + e = contratte
+    #: legame + i = legami
+    #: chiede + o = chiedo
+    #: secco + [ei] = secch[ei]
+    #: reco + i = rechi
+    #: legge + i = leggi
+    #: lego + [ei] = legh[ei]
+    (r'^(.*[aeiou])co \^ e$', r'\1che'),
+    (r'^(.*[aeiou])gge \^ e$', r'\1ggi'),
+    (r'^(.*[aeiou])go \^ e$', r'\1ghe'),
+    (r'^(.*). \^ ([aeio])$', r'\1\2'),
 ]
 
 ORTHOGRAPHY_RULES_ALIASES = {}
