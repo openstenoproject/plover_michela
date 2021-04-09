@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # FSCZPNRXIUuieanpzcsf
 KEYS = (
     'F-', 'S-', 'C-', 'Z-', 'P-', 'N-', 'R-', 'X-', 'I-', 'U-',
