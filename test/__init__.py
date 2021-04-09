@@ -9,7 +9,7 @@ import pytest
 from plover.orthography import add_suffix
 
 
-ORTHOGRAPHIC_RULE_TEST_RX = re.compile(r'^\s+(?P<word>\w+)\s*\+\s*(?P<suffix>\w*(?P<variants>\[\w+\])?)\s*=\s*(?P<expected>\w+(?P=variants)?)(\s*\(\s*(?P<explanation>[^)]+)\s*\))?$')
+ORTHOGRAPHIC_RULE_TEST_RX = re.compile(r'^\s+(?P<word>\w+)\s*\+\s*(?P<suffix>\w*(?P<variants>\[\w+\])?)\s*=\s*(?P<expected>\w+(?P=variants)?)(\s*\(\s*(?P<explanation>[^)]+)\s*\))?\s*$')
 
 
 class OrthographicRuleTest(namedtuple('OrthographicRuleTest', 'location word suffix expected explanation')):
