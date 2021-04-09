@@ -26,8 +26,12 @@ ORTHOGRAPHY_RULES = [
     #: sottoporre + celo = sottoporcelo
     #: scrivete + cel[aeio] = scrivetecel[aeio]
     #: indicato + cel[aeio] = indicatecel[aeio]
+    #: porto + cel[aeio] = portacel[aeio]
+    #: scrivo + cel[aeio] = scrivicel[aeio]
     (r'^(.*[aeiou])r?re \^ cel([aeio])$', r'\1rcel\2'),
-    (r'^(.*). \^ cel([aeio])$', r'\1ecel\2'),
+    (r'^(.*)t[oe] \^ cel([aeio])$', r'\1ecel\2'),
+    (r'^(.*)o \^ cel([aeio])$', r'\1acel\2'),
+    (r'^(.*)o \^ cel([aeio])$', r'\1icel\2'),
 
     # == +cene ==
     #: fare + cene = farcene
@@ -35,8 +39,12 @@ ORTHOGRAPHY_RULES = [
     #: produrre + cene = produrcene
     #: portato + cene = portatecene
     #: scrivete + cene = scrivetecene
+    #: porto + cene = portacene
+    #: scrivo + cene = scrivicene
     (r'^(.*[aeiou])r?re \^ cene$', r'\1rcene'),
-    (r'^(.*). \^ cene$', r'\1ecene'),
+    (r'^(.*)t[oe] \^ cene$', r'\1ecene'),
+    (r'^(.*)o \^ cene$', r'\1acene'),
+    (r'^(.*)o \^ cene$', r'\1icene'),
 
     # == +ci ==
     #: fare + ci = farci
@@ -44,26 +52,36 @@ ORTHOGRAPHY_RULES = [
     #: indurre + ci = indurci
     (r'^(.*[aeiou])r?re \^ ci$', r'\1rci'),
 
-    # == +esco ==
+    # == +esco +eschi ==
     #: mano + esco = manesco
     #: libro + esco = libresco
     #: arabo + esco = arabesco
+    #: mano + eschi = maneschi
+    #: libro + eschi = libreschi
+    #: arabo + eschi = arabeschi
     (r'^(.*). \^ esco$', r'\1esco'),
+    (r'^(.*). \^ eschi$', r'\1eschi'),
 
-    # == +esimo ==
-    #: undici + esimo = undicesimo
-    #: diciasette + esimo = diciasettesimo
-    #: ventitré + esimo = ventitreesimo
-    #: monaco + esimo = monachesimo
-    (r'^(.*[aeiou])tré \^ esimo$', r'\1treesimo'),
-    (r'^(.*[aeiou])co \^ esimo$', r'\1chesimo'),
-    (r'^(.*). \^ esimo$', r'\1esimo'),
+    # == +esimo, +esimo,==
+    #: undici + esim[oi] = undicesimo[oi]
+    #: diciasette + esim[oi] = diciasettesim[oi]
+    #: ventitré + esim[oi] = ventitreesim[oi]
+    #: monaco + esim[oi] = monachesim[oi]
+    (r'^(.*[aeiou])tré \^ esim([oi])$', r'\1treesim\2'),
+    (r'^(.*[aeiou])co \^ esim([oi])$', r'\1chesim\2'),
+    (r'^(.*). \^ esim([oi])$', r'\1esim\2'),
 
-    # == +ismo ==
-    #: abolizione + ismo = abolizionismo
-    #: abusivo + ismo = abusivismo
-    #: centro + ismo = centrismo
-    (r'^(.*). \^ ismo$', r'\1ismo'),
+    # == +ismo, +ismi ==
+    #: abolizione + ism[oi] = abolizionism[oi]
+    #: abusivo + ism[oi] = abusivism[oi]
+    #: centro + ism[oi] = centrism[oi]
+    (r'^(.*). \^ ism([oi])$', r'\1ism\2'),
+
+    # == +ista, +iste, +isti ==
+    #: abolizione + ist[aei] = abolizionist[aei]
+    #: negazione + ist[aei] = negazionist[aei]
+    #: centro + ist[aei] = centrist[aei]
+    (r'^(.*). \^ ist([aei])$', r'\1ist\2'),
 
     # == +ità ==
     #: vasto + ità = vastità
@@ -93,15 +111,25 @@ ORTHOGRAPHY_RULES = [
     #: sottoporre + glielo = sottoporglielo
     #: scrivete + gliel[aeio] = scrivetegliel[aeio]
     #: indicato + gliel[aeio] = indicategliel[aeio]
+    #: porto + gliel[aeio] = portagliel[aeio]
+    #: scrivo + gliel[aeio] = scrivigliel[aeio]
     (r'^(.*[aeiou])r?re \^ gliel([aeio])$', r'\1rgliel\2'),
-    (r'^(.*). \^ gliel([aeio])$', r'\1egliel\2'),
+    (r'^(.*)t[oe] \^ gliel([aeio])e$', r'\1tegliel\2'),
+    (r'^(.*)o \^ gliel([aeio])$', r'\1agliel\2'),
+    (r'^(.*)o \^ gliel([aeio])$', r'\1igliel\2'),
 
     # == +gliene ==
     #: fare + gliene = fargliene
     #: portare + gliene = portargliene
     #: sottoporre + gliene = sottoporgliene
+    #: portato + gliene = portategliene
+    #: scrivete + gliene = scrivetegliene
+    #: porto + gliene = portagliene
+    #: scrivo + gliene = scrivigliene
     (r'^(.*[aeiou])r?re \^ gliene$', r'\1rgliene'),
-    (r'^(.*). \^ gliene$', r'\1egliene'),
+    (r'^(.*)t[oe] \^ gliene$', r'\1tegliene'),
+    (r'^(.*)o \^ gliene$', r'\1agliene'),
+    (r'^(.*)o \^ gliene$', r'\1igliene'),
 
     # == +issima, +issime, +issimi, +issimo,==
     #: felice + issim[aeio] = felicissim[aeio]
@@ -111,29 +139,25 @@ ORTHOGRAPHY_RULES = [
     (r'^(.*). \^ issim([aeio])$', r'\1issim\2'),
 
     # == +la, +le, +li, +lo ==
-    #: dire + la = dirla
-    #: fare + le = farle
-    #: cambiare + li = cambiarli
-    #: vedere + lo = vederlo
-    #: proporre + la = proporla
-    #: condurre + le = condurle
-    #: indurre + li = indurli
-    #: ridurre + lo = ridurlo
+    #: dire + l[aeio] = dirl[aeio]
+    #: fare + l[aeio]= farl[aeio]
+    #: proporre + l[aeio] = proporl[aeio]
+    #: condurre + l[aeio] = condurl[aeio]
     (r'^(.*[aeiou])r?re \^ l([aeio])$', r'\1rl\2'),
 
     # == +mela, +mele, +meli, +melo ==
-    #: fare + mela = farmela
-    #: portare + mele = portarmele
-    #: vedere + meli = vedermeli
-    #: sentire + melo = sentirmelo
-    #: tradurre + mela = tradurmela
-    #: estrarre + mele = estrarmele
-    #: sottrarre + meli = sottrarmeli
-    #: sottoporre + melo = sottopormelo
+    #: fare + mel[aeio] = farmel[aeio]
+    #: portare + mel[aeio]= portarmel[aeio]
+    #: sottrarre + mel[aeio] = sottrarmel[aeio]
+    #: sottoporre + mel[aeio]= sottopormel[aeio]
     #: scrivete + mel[aeio] = scrivetemel[aeio]
     #: indicato + mel[aeio] = indicatemel[aeio]
+    #: porto + mele = portamele
+    #: scrivo + mele = scrivimele
     (r'^(.*[aeiou])r?re \^ mel([aeio])$', r'\1rmel\2'),
-    (r'^(.*). \^ mel([eio])$', r'\1emel\2'),
+    (r'^(.*)t[oe] \^ mel([aeio])$', r'\1emel\2'),
+    (r'^(.*)o \^ mel([aeio])$', r'\1amel\2'),
+    (r'^(.*)o \^ mel([aeio])$', r'\1imel\2'),
 
     # == +mene ==
     #: fare + mene = farmene
@@ -141,18 +165,21 @@ ORTHOGRAPHY_RULES = [
     #: estrarre + mene = estrarmene
     #: scrivete + mene = scrivetemene
     #: indicato + mene = indicatemene
+    #: porto + mene = portamene
+    #: scrivo + mene = scrivimene
     (r'^(.*[aeiou])r?re \^ mene$', r'\1rmene'),
-    (r'^(.*). \^ mene$', r'\1emene'),
+    (r'^(.*)t[oe] \^ mene$', r'\1emene'),
+    (r'^(.*)o \^ mene$', r'\1amene'),
+    (r'^(.*)o \^ mene$', r'\1imene'),
 
     # == +mente ==
     #: abile + mente = abilmente
-    #: folle + mente = follemente
     #: familiare + mente = familiarmente
     #: puro + mente = puramente
     #: retto + mente = rettamente
     #: espresso + mente = espressamente
     #: distinto + mente = distintamente
-    (r'^(.*[aeiou])l?le \^ mente$', r'\1lmente'),
+    (r'^(.*[aeiou])le \^ mente$', r'\1lmente'),
     (r'^(.*[aeiou])re \^ mente$', r'\1rmente'),
     (r'^(.*[aeiou])ro \^ mente$', r'\1ramente'),
     (r'^(.*[aeiou])tto \^ mente$', r'\1tamente'),
@@ -190,33 +217,49 @@ ORTHOGRAPHY_RULES = [
     #== +teci ==
     #: portato + teci = portateci
     #: scrivete + teci = scriveteci
+    #: porto + teci = portateci
+    #: scrivo + mene = scriveteci
     (r'^(.*[aeiou])t[oe] \^ teci$', r'\1teci'),
+    (r'^(.*)o \^ teci$', r'\1ateci'),
+    (r'^(.*)o \^ teci$', r'\1eteci'),
 
     # == +tegli ==
     #: convertito + tegli = convertitegli
     #: scrivete + tegli = scrivetegli
+    #: porto + teci = portategli
+    #: scrivo + mene = scrivetegli
     (r'^(.*[aeiou])t[oe] \^ tegli$', r'\1tegli'),
+    (r'^(.*)o \^ tegli$', r'\1ategli'),
+    (r'^(.*)o \^ tegli$', r'\1etegli'),
 
     # == +tela, +tele, +teli, +telo ==
-    #: cambiare + tela = cambiartela
-    #: portare + tele = portartele
-    #: vedere + teli = vederteli
-    #: sentire + telo = sentirtelo
-    #: estrarre + tela = estrartela
-    #: detrarre + tele = detrartele
-    #: scomporre + teli = scomporteli
-    #: produrre + telo = produrtelo
+    #: cambiare + tel[aeio] = cambiartel[aeio]
+    #: portare + tel[aeio] = portartel[aeio]
+    #: estrarre + tel[aeio] = estrartel[aeio]
+    #: detrarre + tel[aeio]= detrartel[aeio]
+    #: porto + mele = portatele
+    #: scrivo + mele = scrivitele
     (r'^(.*[aeiou])r?re \^ tel([aeio])$', r'\1rtel\2'),
+    (r'^(.*)o \^ tel([aeio])$', r'\1atel\2'),
+    (r'^(.*)o \^ tel([aeio])$', r'\1itel\2'),
 
     #== +temi ==
     #: convertito + temi = convertitemi
     #: scrivete + temi = scrivetemi
+    #: porto + temi = portatemi
+    #: scrivo + temi = scrivetemi
     (r'^(.*[aeiou])t[oe] \^ temi$', r'\1temi'),
+    (r'^(.*)o \^ temi$', r'\1atemi'),
+    (r'^(.*)o \^ temi$', r'\1etemi'),
 
     #== +tevi ==
     #: convertito + tevi = convertitevi
     #: scrivete + tevi = scrivetevi
+    #: porto + tevi = portatevi
+    #: scrivo + tevi = scrivetevi
     (r'^(.*[aeiou])t[oe] \^ tevi$', r'\1tevi'),
+    (r'^(.*)o \^ tevi$', r'\1atevi'),
+    (r'^(.*)o \^ tevi$', r'\1etevi'),
 
     # == +ti ==
     #: dire + ti = dirti
@@ -225,33 +268,23 @@ ORTHOGRAPHY_RULES = [
     (r'^(.*[aeiou])r?re \^ ti$', r'\1rti'),
 
     # == +vela, +vele, +veli, +velo ==
-    #: cambiare + vela = cambiarvela
-    #: portare + vele = portarvele
-    #: vedere + veli = vederveli
-    #: sentire + velo = sentirvelo
-    #: estrarre + vela = estrarvela
-    #: comporre + vele = comporvele
-    #: tradurre + veli = tradurveli
-    #: produrre + velo = produrvelo
-    #: portato + vela = portatevela
-    #: scrivete + vela = scrivetevela
-    #: portato + vele = portatevele
-    #: scrivete + vele = scrivetevele
-    #: portato + veli = portateveli
-    #: scrivete + veli = scriveteveli
-    #: portato + velo = portatevelo
-    #: scrivete + velo = scrivetevelo
+    #: cambiare + vel[aeio] = cambiarvel[aeio]
+    #: portare + vel[aeio] = portarvel[aeio]
+    #: estrarre + vel[aeio] = estrarvel[aeio]
+    #: comporre + vel[aeio] = comporvel[aeio]
+    #: portato + vel[aeio] = portatevel[aeio]
+    #: scrivete + vel[aeio]= scrivetevel[aeio]
     (r'^(.*[aeiou])r?re \^ vel([aeio])$', r'\1rvel\2'),
-    (r'^(.*). \^ vel([aeio])$', r'\1evel\2'),
+    (r'^(.*[aeiou])t[oe] \^ vel([aeio])$', r'\1vel\2'),
 
     # == +vene ==
     #: fare + vene = farvene
     #: liberare + vene = liberarvene
     #: estrarre + vene = estrarvene
     #: scrivete + vene = scrivetevene
-    #: indicato + vene = indicatevene
+    #: portato + vene = portatevene
     (r'^(.*[aeiou])r?re \^ vene$', r'\1rvene'),
-    (r'^(.*). \^ vene$', r'\1evene'),
+    (r'^(.*[aeiou])t[oe] \^ vene$', r'\1tevene'),
 
     # == +vi ==
     #: dire + vi = dirvi
@@ -261,10 +294,10 @@ ORTHOGRAPHY_RULES = [
 
     # == +zata +zate +zati +zato ==
     #: parziale + zat[aeio] = parzializzat[aeio]
-    #: disavanzo + zat[aeio] = disavanzat[aeio]
+    #: avanzo + zat[aeio] = avanzat[aeio]
     #: battezzo + izzat[aeio] = battezzat[aeio]
     (r'^(.*[aeiou])zzo \^ zat([aeio])$', r'\1zzat\2'),
-    (r'^(.*[ln])zo \^ zat([aeio])$', r'\1zat\2'),
+    (r'^(.*[n])zo \^ zat([aeio])$', r'\1zat\2'),
     (r'^(.*). \^ zat([aeio])$', r'\1izzat\2'),
 
     # == +a, +e, +i, +o,==
@@ -278,8 +311,9 @@ ORTHOGRAPHY_RULES = [
     #: legge + i = leggi
     #: lego + [ei] = legh[ei]
     (r'^(.*[aeiou])co \^ e$', r'\1che'),
-    (r'^(.*[aeiou])gge \^ e$', r'\1ggi'),
+    (r'^(.*[aeiou])co \^ i$', r'\1chi'),
     (r'^(.*[aeiou])go \^ e$', r'\1ghe'),
+    (r'^(.*[aeiou])go \^ i$', r'\1ghi'),
     (r'^(.*). \^ ([aeio])$', r'\1\2'),
 ]
 
