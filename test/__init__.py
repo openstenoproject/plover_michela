@@ -74,7 +74,7 @@ class OrthographicTestsCollector(cst.CSTVisitor):
 
 
 def collect_orthographic_rules_tests(source_file):
-    with open(source_file) as fp:
+    with open(source_file, encoding='utf-8') as fp:
         src = fp.read()
     tree = cst.metadata.MetadataWrapper(cst.parse_module(src))
     ortho_collector = OrthographicTestsCollector(source_file)
