@@ -31,9 +31,9 @@ ORTHOGRAPHY_RULES = [
     #: porto + cel[aeio] = portacel[aeio]
     #: scrivo + cel[aeio] = scrivicel[aeio]
     (r'^(.*[aeiou])r?re \^ cel([aeio])$', r'\1rcel\2'),
-    (r'^(.*)t[oe] \^ cel([aeio])$', r'\1ecel\2'),
+    (r'^(.*[aeiou])t[oe] \^ cel([aeio])$', r'\1tecel\2'),
     (r'^(.*)o \^ cel([aeio])$', r'\1acel\2'),
-    (r'^(.*)o \^ cel([aeio])$', r'\1icel\2'),
+    (r'^(.*)[oe] \^ cel([aeio])$', r'\1icel\2'),
 
     # == +cene ==
     #: fare + cene = farcene
@@ -44,7 +44,7 @@ ORTHOGRAPHY_RULES = [
     #: porto + cene = portacene
     #: scrivo + cene = scrivicene
     (r'^(.*[aeiou])r?re \^ cene$', r'\1rcene'),
-    (r'^(.*)t[oe] \^ cene$', r'\1ecene'),
+    (r'^(.*)t[oe] \^ cene$', r'\1tecene'),
     (r'^(.*)o \^ cene$', r'\1acene'),
     (r'^(.*)o \^ cene$', r'\1icene'),
 
@@ -65,7 +65,7 @@ ORTHOGRAPHY_RULES = [
     (r'^(.*). \^ eschi$', r'\1eschi'),
 
     # == +esimo, +esimo,==
-    #: undici + esim[oi] = undicesimo[oi]
+    #: undici + esim[oi] = undicesim[oi]
     #: diciasette + esim[oi] = diciasettesim[oi]
     #: ventitré + esim[oi] = ventitreesim[oi]
     #: monaco + esim[oi] = monachesim[oi]
@@ -91,11 +91,11 @@ ORTHOGRAPHY_RULES = [
     #: unico + ità = unicità
     (r'^(.*). \^ ità$', r'\1ità'),
 
-    # == +età ==
-    #: vario + età = varietà
-    #: socio + età = società
-    #: sobrio + età = sobrietà
-    (r'^(.*). \^ età$', r'\1età'),
+    # == +ietà ==
+    #: terzo + ietà = terzietà
+    #: vario + ietà = varietà
+    (r'^(.*)io \^ ietà$', r'\1ietà'),
+    (r'^(.*)o \^ ietà$', r'\1ietà'),
 
     # == +gli ==
     #: dire + gli = dirgli
@@ -157,7 +157,7 @@ ORTHOGRAPHY_RULES = [
     #: porto + mele = portamele
     #: scrivo + mele = scrivimele
     (r'^(.*[aeiou])r?re \^ mel([aeio])$', r'\1rmel\2'),
-    (r'^(.*)t[oe] \^ mel([aeio])$', r'\1emel\2'),
+    (r'^(.*)t[oe] \^ mel([aeio])$', r'\1temel\2'),
     (r'^(.*)o \^ mel([aeio])$', r'\1amel\2'),
     (r'^(.*)o \^ mel([aeio])$', r'\1imel\2'),
 
@@ -170,7 +170,7 @@ ORTHOGRAPHY_RULES = [
     #: porto + mene = portamene
     #: scrivo + mene = scrivimene
     (r'^(.*[aeiou])r?re \^ mene$', r'\1rmene'),
-    (r'^(.*)t[oe] \^ mene$', r'\1emene'),
+    (r'^(.*)t[oe] \^ mene$', r'\1temene'),
     (r'^(.*)o \^ mene$', r'\1amene'),
     (r'^(.*)o \^ mene$', r'\1imene'),
 
@@ -186,6 +186,7 @@ ORTHOGRAPHY_RULES = [
     (r'^(.*[aeiou])ro \^ mente$', r'\1ramente'),
     (r'^(.*[aeiou])tto \^ mente$', r'\1tamente'),
     (r'^(.*[aeiou])sso \^ mente$', r'\1ssamente'),
+    (r'^(.*[aeiou])vo \^ mente$', r'\1vamente'),
     (r'^(.*[aeiou])nto \^ mente$', r'\1ntamente'),
 
     # == +mi ==
@@ -228,40 +229,53 @@ ORTHOGRAPHY_RULES = [
     # == +tegli ==
     #: convertito + tegli = convertitegli
     #: scrivete + tegli = scrivetegli
-    #: porto + teci = portategli
-    #: scrivo + mene = scrivetegli
+    #: porto + tegli = portategli
+    #: scrivo + tegli = scrivetegli
     (r'^(.*[aeiou])t[oe] \^ tegli$', r'\1tegli'),
     (r'^(.*)o \^ tegli$', r'\1ategli'),
     (r'^(.*)o \^ tegli$', r'\1etegli'),
 
-    # == +tela, +tele, +teli, +telo ==
+    # == +tela, +tele, +teli, +telo
     #: cambiare + tel[aeio] = cambiartel[aeio]
     #: portare + tel[aeio] = portartel[aeio]
     #: estrarre + tel[aeio] = estrartel[aeio]
     #: detrarre + tel[aeio]= detrartel[aeio]
-    #: porto + mele = portatele
-    #: scrivo + mele = scrivitele
+    #: porto + tel[aeio] = portatel[aeio]
+    #: scrivo + tel[aeio] = scrivetel[aeio]
     (r'^(.*[aeiou])r?re \^ tel([aeio])$', r'\1rtel\2'),
     (r'^(.*)o \^ tel([aeio])$', r'\1atel\2'),
+    (r'^(.*)o \^ tel([aeio])$', r'\1etel\2'),
     (r'^(.*)o \^ tel([aeio])$', r'\1itel\2'),
 
     #== +temi ==
     #: convertito + temi = convertitemi
-    #: scrivete + temi = scrivetemi
+    #: seguo + temi = seguitemi
     #: porto + temi = portatemi
     #: scrivo + temi = scrivetemi
     (r'^(.*[aeiou])t[oe] \^ temi$', r'\1temi'),
     (r'^(.*)o \^ temi$', r'\1atemi'),
     (r'^(.*)o \^ temi$', r'\1etemi'),
+    (r'^(.*)o \^ temi$', r'\1itemi'),
+
+    #== +tene ==
+    #: convertito + tene = convertitene
+    #: seguo + tene = seguitene
+    #: porto + ten = portatene
+    #: scrivo + tene = scrivetene
+    (r'^(.*[aeiou])t[oe] \^ tene$', r'\1tene'),
+    (r'^(.*)o \^ tene$', r'\1atene'),
+    (r'^(.*)o \^ tene$', r'\1etene'),
+    (r'^(.*)o \^ tene$', r'\1itene'),
 
     #== +tevi ==
     #: convertito + tevi = convertitevi
-    #: scrivete + tevi = scrivetevi
+    #: seguo + tevi = seguitevi
     #: porto + tevi = portatevi
     #: scrivo + tevi = scrivetevi
     (r'^(.*[aeiou])t[oe] \^ tevi$', r'\1tevi'),
     (r'^(.*)o \^ tevi$', r'\1atevi'),
     (r'^(.*)o \^ tevi$', r'\1etevi'),
+    (r'^(.*)o \^ tevi$', r'\1itevi'),
 
     # == +ti ==
     #: dire + ti = dirti
@@ -277,7 +291,7 @@ ORTHOGRAPHY_RULES = [
     #: portato + vel[aeio] = portatevel[aeio]
     #: scrivete + vel[aeio]= scrivetevel[aeio]
     (r'^(.*[aeiou])r?re \^ vel([aeio])$', r'\1rvel\2'),
-    (r'^(.*[aeiou])t[oe] \^ vel([aeio])$', r'\1vel\2'),
+    (r'^(.*[aeiou])t[oe] \^ vel([aeio])$', r'\1tevel\2'),
 
     # == +vene ==
     #: fare + vene = farvene
@@ -285,8 +299,8 @@ ORTHOGRAPHY_RULES = [
     #: estrarre + vene = estrarvene
     #: scrivete + vene = scrivetevene
     #: portato + vene = portatevene
-    (r'^(.*[aeiou])r?re \^ vene$', r'\1rvene'),
-    (r'^(.*[aeiou])t[oe] \^ vene$', r'\1tevene'),
+   (r'^(.*[aeiou])r?re \^ vene$', r'\1rvene'),
+   (r'^(.*[aeiou])t[oe] \^ vene$', r'\1tevene'),
 
     # == +vi ==
     #: dire + vi = dirvi
@@ -303,7 +317,7 @@ ORTHOGRAPHY_RULES = [
     (r'^(.*). \^ zat([aeio])$', r'\1izzat\2'),
 
     # == +a, +e, +i, +o,==
-    # these suffixes are used to change the gender and the number of words
+    # these suffixes are used to change the gender and the number of any words
     #: vivo + a = viva
     #: contratto + e = contratte
     #: legame + i = legami
@@ -312,10 +326,22 @@ ORTHOGRAPHY_RULES = [
     #: reco + i = rechi
     #: legge + i = leggi
     #: lego + [ei] = legh[ei]
-    (r'^(.*[aeiou])co \^ e$', r'\1che'),
-    (r'^(.*[aeiou])co \^ i$', r'\1chi'),
-    (r'^(.*[aeiou])go \^ e$', r'\1ghe'),
-    (r'^(.*[aeiou])go \^ i$', r'\1ghi'),
+    (r'^(.*[aeiou])ch?[aeio] \^ a$', r'\1ca'),
+    (r'^(.*[aeiou])cch?[aeio] \^ a$', r'\1cca'),
+    (r'^(.*[aeiou])ch?[aeio] \^ e$', r'\1che'),
+    (r'^(.*[aeiou])cch?[aeio] \^ e$', r'\1cche'),
+    (r'^(.*[aeiou])ch?[aeio] \^ i$', r'\1chi'),
+    (r'^(.*[aeiou])cch?[aeio] \^ i$', r'\1cchi'),
+    (r'^(.*[aeiou])ch?[aeio] \^ o$', r'\1co'),
+    (r'^(.*[aeiou])cch?[aeio] \^ o$', r'\1cco'),
+    (r'^(.*[aeiou])gh?[aeio] \^ a$', r'\1ga'),
+    (r'^(.*[aeiou])gg[aeio] \^ a$', r'\1gga'),
+    (r'^(.*[aeiou])gh?[aeio] \^ e$', r'\1ghe'),
+    (r'^(.*[aeiou])gg[aeio] \^ e$', r'\1gge'),
+    (r'^(.*[aeiou])gh?[aeio] \^ i$', r'\1ghi'),
+    (r'^(.*[aeiou])gg[aeio] \^ i$', r'\1ggi'),
+    (r'^(.*[aeiou])gh?[aeio] \^ o$', r'\1go'),
+    (r'^(.*[aeiou])gg[aeio] \^ o$', r'\1ggo'),
     (r'^(.*). \^ ([aeio])$', r'\1\2'),
 ]
 
