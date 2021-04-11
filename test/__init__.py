@@ -1,4 +1,5 @@
 from collections import namedtuple
+from pprint import pformat
 import functools
 import itertools
 import re
@@ -6,7 +7,8 @@ import re
 import libcst as cst
 import pytest
 
-from plover.orthography import add_suffix
+from plover.orthography import add_suffix, make_candidates_from_rules
+from plover import system
 
 
 ORTHOGRAPHIC_RULE_TEST_RX = re.compile(r'^\s+(?P<word>\w+)\s*\+\s*(?P<suffix>\w*(?P<variants>\[\w+\])?)\s*=\s*(?P<expected>\w+(?P=variants)?)(\s*\(\s*(?P<explanation>[^)]+)\s*\))?\s*$')
@@ -82,6 +84,26 @@ def collect_orthographic_rules_tests(source_file):
     return ortho_collector.test_list
 
 
+def orthographic_rules_report(word, suffix):
+    report = {}
+    in_wordlist = system.ORTHOGRAPHY_WORDS.__contains__
+    rules_alias = system.ORTHOGRAPHY_RULES_ALIASES.get(suffix)
+    if rules_alias is not None:
+        report['rules alias'] = rules_alias
+        report['candidates [alias]'] = make_candidates_from_rules(word, alias, in_wordlist)
+    report['simple join in wordlist'] = in_wordlist(word + suffix)
+    report['wordlist candidates'] = {
+        w: system.ORTHOGRAPHY_WORDS[w] for w in
+        make_candidates_from_rules(word, suffix, in_wordlist)
+    }
+    report['other candidates'] = [
+        w
+        for w in make_candidates_from_rules(word, suffix)
+        if w not in report['wordlist candidates']
+    ]
+    return report
+
+
 def orthographic_rules_test(system_source_py):
     test_list = collect_orthographic_rules_tests(system_source_py)
     test_ids = [t.format() for t in test_list]
@@ -91,7 +113,11 @@ def orthographic_rules_test(system_source_py):
         def test_runner(test, *args, **kwargs):
             fn(test, *args, **kwargs)
             result = add_suffix(test.word, test.suffix)
-            msg = test.format(location=False, result=result)
+            report = orthographic_rules_report(test.word, test.suffix)
+            msg = '%s\n%s' % (
+                test.format(location=False, result=result),
+                '\n'.join('• %s: %s' % (k, pformat(v)) for k, v in report.items()),
+            )
             assert result == test.expected, msg
         return test_runner
     return decorator
