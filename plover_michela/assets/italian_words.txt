@@ -35677,8 +35677,6 @@ esser -87
 essercene -8
 esserci -1123
 essere -53913
-essereapprovato -3
-esserecosì -3
 essergli -18
 esseri -572
 esserle -9
@@ -40194,7 +40192,6 @@ fuoriescano -3
 fuoriesce -10
 fuoriescono -7
 fuorigioco -6
-fuorilamafiadallostato -3
 fuorilegge -18
 fuoristradistico -3
 fuoriuscire -3
@@ -43146,7 +43143,7 @@ illegalmente -95
 illeggibile -28
 illeggibili -12
 illeggibilità -3
-illeggittimamente -3
+illegittimamente -3
 illegittima -153
 illegittimamente -54
 illegittime -49
@@ -46613,6 +46610,7 @@ indimostrabile -6
 indimostrabili -3
 indimostrata -6
 indimostrate -3
+indio -3
 indipendente -403
 indipendentemente -453
 indipendenti -209
@@ -46808,7 +46806,6 @@ indiziati -66
 indiziato -41
 indizio -29
 indizione -68
-indo -3
 indoamericana -3
 indocinese -3
 indoeuroasiatiche -3
@@ -52732,8 +52729,6 @@ leave -6
 leaver -3
 lebbra -4
 lebbrosi -3
-lebensgemeinschaft -3
-lebenspartnerschaft -3
 lecca -3
 leccando -3
 leccapiedi -4
@@ -57061,13 +57056,10 @@ millantatori -5
 millantavano -3
 millanteria -3
 mille -1027
-millecambidiidee -3
-millecentoventi -3
 milleduecentesima -3
 milleduecento -4
 milleerrori -3
 millefoglie -3
-millefraintendimenti -3
 milleinganni -3
 millemance -3
 millenari -9
@@ -57084,7 +57076,6 @@ millenorme -7
 millepasticci -3
 milleproroghe -603
 millequattrocento -4
-millequattrocentocinquantasei -3
 millesima -3
 millesimali -3
 millesimi -6
@@ -58597,7 +58588,6 @@ mucchio -31
 much -3
 mucillaggini -3
 muco -4
-mucopolisaccaridosi -3
 mucosale -3
 muezzin -3
 muffa -8
@@ -63876,7 +63866,6 @@ partitocratico -13
 partitocratizzazione -3
 partitocrazia -43
 partitocrazie -3
-partitodirittimilitari -3
 partitum -3
 partitura -3
 partiture -3
@@ -66888,7 +66877,7 @@ politicizzato -7
 politicizzazione -16
 politicizzerebbe -3
 politico -7445
-politicodiplomatiche -3
+politico-diplomatiche -3
 politics -6
 politicum -3
 politicus -3
@@ -67571,9 +67560,9 @@ postume -9
 postumi -9
 postumo -16
 postunitario -3
-postuniversitari -3
-postuniversitaria -3
-postuniversitario -3
+post-universitari -3
+post-universitaria -3
+post-universitario -3
 postura -15
 posturale -3
 posturali -3
@@ -68109,7 +68098,6 @@ precristiana -3
 precristiano -3
 precursore -21
 precursori -15
-precvedentemente -3
 preda -103
 predate -3
 predator -3
@@ -69611,7 +69599,6 @@ primordiale -13
 primordiali -6
 primum -6
 primus -7
-principal -4
 principale -1657
 principali -1571
 principalissima -3
@@ -72203,7 +72190,6 @@ queen -3
 queer -3
 quegli -1722
 quei -5605
-queimanager -3
 quel -11707
 quelgap -3
 quell -3772
@@ -72212,9 +72198,6 @@ quellacosa -3
 quelle -12393
 quelli -9587
 quello -31024
-quelreferendum -3
-quelsurplus -3
-quelvulnus -3
 quem -7
 querce -4
 quercia -3
@@ -72351,7 +72334,6 @@ quotistico -4
 quousque -5
 quoziente -48
 quozienti -28
-qust -3
 rabberciano -3
 rabberciare -3
 rabberciata -6
@@ -86178,10 +86160,9 @@ seicentomila -3
 seicentosessant -3
 seicentotrenta -40
 seicentotrentaquattro -3
-seicentotrenya -3
+seicentotrenta -3
 seimila -3
 seiner -3
-seismicity -3
 selciato -3
 selenio -4
 selettiva -62
@@ -87781,7 +87762,6 @@ sharia -10
 sharing -62
 sharp -3
 shave -3
-shek -3
 shelter -3
 sherpa -3
 shield -6
@@ -87851,7 +87831,6 @@ sicuri -446
 sicurissimi -3
 sicurissimo -4
 sicuro -866
-sicurézza -3
 side -3
 siderale -26
 siderali -4
@@ -94129,7 +94108,6 @@ strutture -2428
 strutturiamo -3
 struzzi -10
 struzzo -16
-stu -8
 stubborn -3
 stuccare -3
 stucchevole -32
@@ -95947,7 +95925,6 @@ tamburellando -3
 tamburi -4
 tamburo -3
 tamen -3
-tampon -3
 tampona -4
 tamponabile -3
 tamponamenti -6
@@ -96983,7 +96960,6 @@ terrestre -84
 terrestri -35
 terrete -4
 terribile -391
-terribileescalation -3
 terribili -160
 terribilismo -3
 terribilmente -41
@@ -97208,7 +97184,6 @@ thema -4
 therapy -8
 there -3
 theresiana -3
-thiamethoxam -3
 thing -3
 things -3
 think -16
@@ -100084,7 +100059,6 @@ ultimissime -7
 ultimissimi -13
 ultimissimo -7
 ultimo -5327
-ultimoreferendum -3
 ultra -27
 ultrabimillenaria -3
 ultrabrevettuale -3
@@ -100270,7 +100244,6 @@ uncrack -3
 uncurriculum -3
 und -3
 undecies -9
-undeficit -3
 under -66
 underdog -3
 understanding -6
@@ -100282,7 +100255,6 @@ undicenni -3
 undicesima -7
 undicesimo -36
 undici -224
-undis -3
 une -22
 unemployment -3
 unendo -20
@@ -100293,7 +100265,6 @@ unendolo -3
 unendomi -9
 unendosi -5
 unendovi -3
-unflop -3
 ungarico -9
 ungere -3
 ungherese -21
@@ -100465,8 +100436,6 @@ univoche -22
 univoci -21
 univocità -19
 univoco -64
-unmobility -3
-unmodus -3
 unno -3
 uno -16810
 unti -4
@@ -103514,7 +103483,7 @@ whistleblowing -20
 white -59
 who -3
 wholesale -3
-wi -21
+why -21
 wild -4
 will -4
 wilsonismo -3
@@ -103645,7 +103614,6 @@ zingarata -3
 zingari -10
 zingaro -3
 zio -33
-zionale -3
 zione -3
 zitta -43
 zittamento -5
@@ -103727,3 +103695,15 @@ zucchino -3
 zuffa -3
 zulù -3
 zuppa -11
+metticelo -4
+scrivicelo -4
+valutacene -4
+portacene -3
+portacela -3
+valutacela -3
+ventiseiesimi -12
+mettimene -3
+portamene -3
+cercamene -3
+scrivimene -3
+seguitevi -3
