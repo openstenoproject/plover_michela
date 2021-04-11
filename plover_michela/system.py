@@ -311,7 +311,7 @@ ORTHOGRAPHY_RULES = [
     # == +zata +zate +zati +zato ==
     #: parziale + zat[aeio] = parzializzat[aeio]
     #: avanzo + zat[aeio] = avanzat[aeio]
-    #: battezzo + izzat[aeio] = battezzat[aeio]
+    #: battezzo + zat[aeio] = battezzat[aeio]
     (r'^(.*[aeiou])zzo \^ zat([aeio])$', r'\1zzat\2'),
     (r'^(.*[n])zo \^ zat([aeio])$', r'\1zat\2'),
     (r'^(.*). \^ zat([aeio])$', r'\1izzat\2'),
