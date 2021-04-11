@@ -260,7 +260,7 @@ ORTHOGRAPHY_RULES = [
     #== +tene ==
     #: convertito + tene = convertitene
     #: seguo + tene = seguitene
-    #: porto + ten = portatene
+    #: porto + tene = portatene
     #: scrivo + tene = scrivetene
     (r'^(.*[aeiou])t[oe] \^ tene$', r'\1tene'),
     (r'^(.*)o \^ tene$', r'\1atene'),
