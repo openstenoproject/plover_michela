@@ -430,3 +430,5 @@ DEFAULT_DICTIONARIES = (
     'michela_sillabico.json',
     'michela_principale.json',
 )
+
+# vim: spell spelllang=it
