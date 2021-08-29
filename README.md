@@ -13,6 +13,10 @@ https://github.com/Sillabix/Plover-Michela
 
 ## Release history
 
+### 1.0.1
+
+* fix wordlist: drop duplicate entries
+
 ### 1.0.0
 
 * drop phonetic/orthographic differentiation, only support one "Michela" system
