@@ -1,4 +1,14 @@
-﻿a -298531
+Bibbia -3
+Dio -468
+Italia -29730
+Italy -717
+Papa -275
+Premier -897
+Presidente -74541
+Senato -48417
+Vangelo -35
+Vaticano -56
+a -298531
 ab -16
 abaco -3
 abate -6
@@ -1485,7 +1495,6 @@ accostati -14
 accostato -13
 accosti -4
 accostiamo -3
-accosto -3
 accosto -6
 account -19
 accountability -17
@@ -1758,7 +1767,6 @@ acquistiamo -14
 acquistino -6
 acquisto -797
 acquistò -6
-acquisì -5
 acquisì -6
 acre -7
 acredine -4
@@ -2225,7 +2233,6 @@ adiuvante -3
 adiuvanti -4
 adiuvantibus -4
 administration -5
-adolescente -3
 adolescente -42
 adolescenti -213
 adolescenza -251
@@ -4604,7 +4611,6 @@ amaranto -3
 amarcord -4
 amare -100
 amareggia -12
-amareggia -3
 amareggiano -3
 amareggiante -3
 amareggiata -10
@@ -4667,7 +4673,6 @@ ambientalistico -3
 ambientalizzare -3
 ambientalizzato -3
 ambientalizzazione -27
-ambientalizzazione -3
 ambientalmente -47
 ambientarlo -3
 ambientarsi -3
@@ -4955,7 +4960,6 @@ amministrate -32
 amministrati -42
 amministrativa -1223
 amministrativamente -10
-amministrative -3
 amministrative -749
 amministrativi -672
 amministrativista -3
@@ -5975,7 +5979,6 @@ anteriore -37
 anteriori -14
 anteriorità -3
 anteriormente -21
-anteriormente -3
 antesi -3
 antesignana -3
 antesignani -6
@@ -6166,7 +6169,6 @@ antidissesto -3
 antidogmatismo -3
 antidolorifiche -3
 antidolorifici -3
-antidolorifico -3
 antidolorifico -6
 antidoping -4
 antidoti -11
@@ -6205,7 +6207,6 @@ antievasione -7
 antievasiva -3
 antievasive -3
 antifascismo -29
-antifascismo -3
 antifascista -49
 antifasciste -13
 antifascisti -15
@@ -7159,7 +7160,6 @@ appresero -3
 appresi -6
 appreso -276
 appresso -23
-appresso -3
 appresta -165
 apprestamenti -3
 apprestamento -3
@@ -7429,8 +7429,6 @@ approvata -2698
 approvate -654
 approvateli -3
 approvatevela -3
-approvati -3
-approvati -3
 approvati -883
 approvativa -5
 approvative -4
@@ -7590,7 +7588,6 @@ arare -5
 arati -4
 arato -3
 aratro -3
-aratro -3
 aratura -3
 arbitra -3
 arbitrabile -3
@@ -7655,7 +7652,6 @@ architettate -3
 architettati -3
 architettato -10
 architetti -41
-architetto -3
 architetto -69
 architettonica -20
 architettonicamente -4
@@ -7703,7 +7699,6 @@ arcinota -9
 arcinote -3
 arcinoti -3
 arcinoto -6
-arcipelaghi -3
 arcipelaghi -3
 arcipelago -15
 arcispedale -3
@@ -9139,7 +9134,6 @@ assistevo -3
 assistiamo -280
 assistiamoli -3
 assistita -259
-assistita -3
 assistite -51
 assistiti -102
 assistito -954
@@ -9208,7 +9202,6 @@ assoggettandolo -3
 assoggettandosi -3
 assoggettano -5
 assoggettarci -3
-assoggettare -3
 assoggettare -30
 assoggettarle -3
 assoggettarli -3
@@ -10908,7 +10901,6 @@ autonome -624
 autonomi -381
 autonomia -2164
 autonomie -1171
-autonomie -3
 autonomina -3
 autonominarsi -3
 autonominatisi -3
@@ -12767,7 +12759,6 @@ bega -5
 beggiare -3
 beghe -18
 begli -12
-beh -3
 beh -42
 behind -4
 bei -58
@@ -13054,7 +13045,6 @@ biasimevoli -3
 biasimiamo -5
 biasimo -12
 biathlon -4
-Bibbia -3
 bibendum -3
 biberon -3
 bibibliotecarismo -3
@@ -13829,7 +13819,6 @@ bordelli -3
 bordello -5
 border -9
 borderline -15
-borderline -3
 borders -3
 bordetella -3
 bordi -6
@@ -15651,7 +15640,6 @@ capitolino -8
 capitolo -588
 capitreno -3
 capitò -24
-capitò -3
 capiva -29
 capivamo -4
 capivano -6
@@ -17112,6 +17100,7 @@ cerberi -3
 cerbero -4
 cerca -1099
 cercai -6
+cercamene -3
 cercammo -3
 cercando -1285
 cercandola -3
@@ -18944,9 +18933,9 @@ collazione -3
 colle -14
 collecting -12
 collega -8563
+collegaCentinaio -3
 collegabile -6
 collegabili -12
-collegaCentinaio -3
 collegamenti -233
 collegamento -616
 collegando -18
@@ -19331,6 +19320,7 @@ columnist -3
 colà -7
 colò -3
 com -1891
+comE -3
 coma -20
 comanda -91
 comandamenti -8
@@ -19440,7 +19430,6 @@ combustile -3
 combustione -64
 combustioni -3
 combutta -9
-comE -3
 come -86848
 cometa -8
 comfort -8
@@ -20550,7 +20539,6 @@ comunicargli -5
 comunicarglielo -3
 comunicarla -3
 comunicarle -13
-comunicarle -5
 comunicarli -3
 comunicarlo -37
 comunicarmi -3
@@ -20569,7 +20557,6 @@ comunicativi -10
 comunicativo -53
 comunicato -763
 comunicatoci -3
-comunicatole -3
 comunicatole -3
 comunicatomi -3
 comunicatore -12
@@ -20842,7 +20829,6 @@ conciliato -3
 conciliatore -10
 conciliava -3
 conciliazione -263
-conciliazioni -5
 conciliazioni -7
 concilierebbe -5
 concilierebbero -3
@@ -24776,7 +24762,6 @@ costituzionalmente -501
 costituzione -813
 costituzioni -16
 costituì -13
-costituì -3
 costo -2519
 costola -14
 costole -3
@@ -29135,7 +29120,6 @@ dii -3
 diintelligence -3
 diintervenire -3
 diknow -3
-diktat -3
 diktat -66
 dilaga -17
 dilagando -10
@@ -29584,7 +29568,6 @@ dinosauro -14
 dinto -3
 dintorni -36
 dio -42
-Dio -468
 diocesana -3
 diocesani -3
 diocesano -4
@@ -30325,7 +30308,6 @@ disegnato -101
 disegnatori -4
 disegnava -3
 disegnavano -3
-disegnerebbe -3
 disegnerebbe -4
 disegnerà -3
 disegni -3559
@@ -30949,7 +30931,6 @@ dissennata -45
 dissennatamente -3
 dissennate -22
 dissennati -5
-dissennato -3
 dissennato -8
 dissensi -40
 dissenso -1504
@@ -35568,7 +35549,6 @@ esprimerete -6
 esprimergli -6
 esprimerla -10
 esprimerle -19
-esprimerle -3
 esprimerli -7
 esprimerlo -14
 esprimermi -47
@@ -38007,7 +37987,6 @@ fiero -59
 fievole -3
 fighettini -3
 fighetto -3
-fighter -3
 fighter -33
 fighters -31
 figiciotti -3
@@ -40086,7 +40065,6 @@ fumosi -14
 fumosità -11
 fumoso -26
 fumus -129
-fumus -3
 fun -3
 funamboli -3
 funambolici -3
@@ -42717,7 +42695,6 @@ harem -3
 harm -3
 hascemita -3
 hashish -14
-hashtag -3
 hashtag -39
 hate -3
 haters -3
@@ -43143,7 +43120,6 @@ illegalmente -95
 illeggibile -28
 illeggibili -12
 illeggibilità -3
-illegittimamente -3
 illegittima -153
 illegittimamente -54
 illegittime -49
@@ -45239,7 +45215,6 @@ incantevoli -3
 incantevolmente -3
 incanti -11
 incanto -20
-incanto -3
 incantò -3
 incapace -296
 incapaci -245
@@ -45729,12 +45704,12 @@ inclusivista -3
 inclusività -19
 inclusivo -73
 incluso -124
+incoeRenzi -3
 incoercibile -3
 incoerente -72
 incoerenti -26
 incoerenza -89
 incoerenze -19
-incoeRenzi -3
 incognita -12
 incognite -31
 incognito -5
@@ -45775,7 +45750,6 @@ incolto -5
 incolumi -4
 incolumità -291
 incombe -55
-incombente -3
 incombente -32
 incombenti -18
 incombenza -30
@@ -47497,13 +47471,13 @@ influivano -3
 influssi -7
 influsso -9
 info -11
+infoMercatiEsteri -3
 infogna -3
 infoibata -3
 infoibati -3
 infoinvestigativa -3
 infoltire -3
 infoltirebbero -3
-infoMercatiEsteri -3
 infondata -80
 infondatamente -3
 infondate -86
@@ -47532,7 +47506,6 @@ informano -25
 informarci -17
 informare -382
 informarla -13
-informarla -3
 informarle -3
 informarli -9
 informarlo -8
@@ -48475,7 +48448,6 @@ inquietarsi -3
 inquietato -4
 inquiete -3
 inquieti -3
-inquieto -3
 inquieto -6
 inquietudine -53
 inquietudini -14
@@ -50821,7 +50793,6 @@ inviare -157
 inviargli -3
 inviarla -3
 inviarle -3
-inviarle -3
 inviarli -3
 inviarlo -4
 inviarsi -3
@@ -51853,7 +51824,6 @@ istruzione -1854
 istruzioni -52
 it -52
 ita -3
-Italia -29730
 italian -36
 italiana -6560
 italianamente -3
@@ -51889,7 +51859,6 @@ italofona -3
 italofoni -3
 italofrancese -3
 italovenezuelani -3
-Italy -717
 item -3
 iter -1888
 iterato -3
@@ -54848,7 +54817,6 @@ mammona -3
 mammut -3
 man -140
 management -115
-management -3
 manager -253
 manageriale -41
 manageriali -33
@@ -56709,8 +56677,10 @@ mettiamole -4
 mettiamoli -5
 mettiamolo -6
 mettiate -11
+metticelo -4
 mettila -3
 mettili -3
+mettimene -3
 mettiti -3
 metto -220
 mettono -682
@@ -58384,7 +58354,6 @@ mortuari -3
 mortuaria -3
 mortuarie -3
 morì -29
-morì -3
 mosaicature -3
 mosaici -6
 mosaico -43
@@ -62518,7 +62487,6 @@ otrantini -3
 otre -3
 otri -3
 ottagona -3
-ottanta -33
 ottanta -60
 ottantacinque -12
 ottantadue -6
@@ -62962,7 +62930,6 @@ paglia -15
 pagliacci -12
 pagliaccia -3
 pagliacciata -31
-pagliacciate -3
 pagliacciate -7
 pagliaccio -13
 pagliai -3
@@ -63227,7 +63194,6 @@ panzanate -3
 panzane -7
 panzer -3
 panzerotto -3
-Papa -275
 papa -31
 papabile -3
 papabili -3
@@ -66141,7 +66107,6 @@ pigliate -3
 pigliatevelo -3
 pigliatutti -3
 pigliatutto -17
-pigliatutto -5
 pigliavano -3
 piglio -23
 pigmeo -3
@@ -67148,7 +67113,6 @@ porgere -32
 porgergli -3
 porgerle -3
 porgervi -3
-porgervi -3
 porgerà -3
 porgete -3
 porgiamo -3
@@ -67189,6 +67153,8 @@ portabagagli -3
 portabandiera -3
 portabilità -21
 portaborse -7
+portacela -3
+portacene -3
 portacontainer -4
 portaerei -17
 portafogli -23
@@ -67198,6 +67164,7 @@ portai -7
 portale -93
 portalettere -5
 portali -14
+portamene -3
 portamento -3
 portami -3
 portammo -6
@@ -67435,6 +67402,9 @@ possit -3
 posso -2749
 possono -9380
 post -589
+post-universitari -3
+post-universitaria -3
+post-universitario -3
 posta -1602
 postaci -3
 postagli -3
@@ -67560,9 +67530,6 @@ postume -9
 postumi -9
 postumo -16
 postunitario -3
-post-universitari -3
-post-universitaria -3
-post-universitario -3
 postura -15
 posturale -3
 posturali -3
@@ -68558,7 +68525,6 @@ premiava -4
 premiazione -6
 premiazioni -3
 premier -530
-Premier -897
 premieranno -6
 premierato -48
 premierebbe -3
@@ -69051,7 +69017,6 @@ presi -679
 preside -127
 president -3
 presidente -13699
-Presidente -74541
 presidentessa -7
 presidenti -315
 presidenza -238
@@ -70163,7 +70128,6 @@ profiliamo -3
 profilo -2274
 profilò -3
 profit -126
-profit -3
 profitta -3
 profittabilità -5
 profittando -3
@@ -74211,7 +74175,6 @@ reggitori -3
 reggono -65
 regi -3
 regia -281
-regia -3
 regie -6
 regimano -3
 regimare -4
@@ -79109,7 +79072,6 @@ ringraziandovi -5
 ringraziano -26
 ringraziarci -6
 ringraziare -1532
-ringraziarla -3
 ringraziarla -83
 ringraziarle -7
 ringraziarli -26
@@ -79381,7 +79343,6 @@ rinvigorita -7
 rinvigorito -3
 rinvigoriva -3
 rinvii -211
-rinvii -3
 rinviino -3
 rinvio -1185
 rinviodella -3
@@ -83619,13 +83580,13 @@ scaglioni -21
 scagliò -4
 scagnozzi -3
 scala -366
+scalaRichter -3
 scalabile -3
 scalabili -6
 scalabilità -4
 scalando -5
 scalano -3
 scalare -43
-scalaRichter -3
 scalarità -4
 scalata -32
 scalate -23
@@ -85607,6 +85568,8 @@ scriviamo -97
 scriviamole -3
 scriviamolo -6
 scrivibile -3
+scrivicelo -4
+scrivimene -3
 scrivo -21
 scrivono -134
 scroccato -3
@@ -86143,6 +86106,7 @@ seguite -137
 seguitemi -3
 seguiteranno -3
 seguiteremo -3
+seguitevi -3
 seguiti -122
 seguito -5496
 seguiva -26
@@ -86160,7 +86124,6 @@ seicentomila -3
 seicentosessant -3
 seicentotrenta -40
 seicentotrentaquattro -3
-seicentotrenta -3
 seimila -3
 seiner -3
 selciato -3
@@ -86466,7 +86429,6 @@ senatellum -3
 senati -3
 senaticchio -7
 senatirce -3
-Senato -48417
 senato -6
 senator -5
 senatore -57304
@@ -87953,7 +87915,6 @@ signorotto -5
 signorsì -6
 signot -3
 sii -17
-sii -7
 siilo -3
 sikh -3
 silence -3
@@ -88442,7 +88403,6 @@ sloggiato -3
 slope -3
 slopping -3
 slot -161
-slot -3
 slovacca -8
 slovacchi -3
 slovacco -4
@@ -89221,7 +89181,6 @@ soil -3
 soja -3
 sol -33
 sola -2041
-sola -7
 solai -7
 solaio -3
 solamente -1461
@@ -92693,7 +92652,6 @@ stabilì -43
 stabulari -3
 stabunt -5
 stacanovista -3
-stacca -3
 stacca -7
 staccando -3
 staccandosi -3
@@ -94402,8 +94360,6 @@ subitanei -3
 subitaneo -3
 subite -73
 subiti -121
-subiti -4
-subito -278
 subito -3852
 subiva -11
 subivano -8
@@ -94815,6 +94771,7 @@ suora -5
 suore -17
 suorine -3
 super -144
+superComuni -3
 supera -341
 superabile -22
 superabili -22
@@ -94875,7 +94832,6 @@ supercommissari -4
 supercommissariare -3
 supercommissario -3
 supercompetenti -3
-superComuni -3
 supercondensatori -3
 supercondensazione -3
 supercontrolli -3
@@ -98749,7 +98705,6 @@ trasmetterete -3
 trasmettergli -3
 trasmetterla -4
 trasmetterle -11
-trasmetterle -3
 trasmetterli -6
 trasmetterlo -13
 trasmettermi -3
@@ -101083,6 +101038,8 @@ value -6
 valuta -183
 valutabile -21
 valutabili -23
+valutacela -3
+valutacene -4
 valutammo -3
 valutando -259
 valutandola -3
@@ -101175,7 +101132,6 @@ vaneggiato -3
 vaneggino -3
 vanesio -3
 vanga -3
-Vangelo -35
 vani -44
 vanifica -33
 vanificando -34
@@ -101369,7 +101325,6 @@ vaticana -11
 vaticane -3
 vaticani -3
 vaticano -3
-Vaticano -56
 vaticinanti -3
 vaticinate -3
 vaticinato -3
@@ -101806,6 +101761,7 @@ ventiquattro -309
 ventiquattrore -16
 ventisei -63
 ventiseienne -4
+ventiseiesimi -12
 ventiseiesimo -8
 ventisette -62
 ventisettenne -3
@@ -103695,15 +103651,3 @@ zucchino -3
 zuffa -3
 zulù -3
 zuppa -11
-metticelo -4
-scrivicelo -4
-valutacene -4
-portacene -3
-portacela -3
-valutacela -3
-ventiseiesimi -12
-mettimene -3
-portamene -3
-cercamene -3
-scrivimene -3
-seguitevi -3
