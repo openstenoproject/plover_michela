@@ -13,6 +13,20 @@ https://github.com/Sillabix/Plover-Michela
 
 ## Release history
 
+### 2.0.0
+
+* The theory has been updated to take full advantage of the inflectional suffixes
+  based on grammar rules recently introduced. In particular:
+  - The rules to indicate the endings of the words "e" and "i" have been modified
+    to avoid conflicts caused by the previous diphthong-based system (for a full
+    description refer to the Michela theory manual on GitHub).
+  - The numeric dictionary' strokes have been changed (from `IU` to `Uu`) in
+    order to avoid a series of possible conflicts.
+  - The syllabic finger-spelling system has been modified: it now uses the
+    combination `RX` and `RXI` for capital letters.
+* Numerous definitions relating to prefixes / suffixes and formatting commands
+  have been amended.
+
 ### 1.0.1
 
 * fix wordlist: drop duplicate entries
